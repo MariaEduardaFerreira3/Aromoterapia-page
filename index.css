@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: brown;
+
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(186, 157, 214);
+}
+menu{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgheader{
+    width: 30px;
+    height: 30px; 
+}
+
+.elementos{
+    display: flex;
+    width: 280px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.divaromoterapia{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 270px;
+
+}
+.divlogo{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#imglogo{
+    width: 250px;
+    height: 250px;
+}
+.divbutton{
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    align-items: center;
+
+}
+.divbutton ul{
+    display: flex;
+}
+.button{
+    background-color:  rgb(186, 157, 214);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    margin: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: space-between;
+    list-style: none;
+}
+.button:hover {background-color: #c1b4c5}
+
+.divsobre{
+    background-color: rgb(186, 157, 214); 
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+.divparagrafo{
+    width: 600px;
+    height: 300px;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.divimagem{
+    display: block;
+    width: 250px;
+    height: 500px;
+    margin-right: 100px;
+    position: relative;
+    cursor: pointer;
+}
+.divimagem img{
+    width: 600px;
+    height: 600px;
+
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divimagem:hover .overlay{
+    opacity: 1;
+}
+.divservico{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap "Quebra linhas de container" */
+}
+.quadradinho{
+    background-color: rgb(186, 157, 214);
+    width: 350px;
+    height: 400px;
+    margin-top: 55px;
+    text-align: justify;
+    padding: 3%;
+    border-radius: 10%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.divagendamento{
+    background-color: rgb(186, 157, 214);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 12%;
+
+}
+form{
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+}
+fieldset{
+    border:0;
+}
+input{
+    border:none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    justify-content: space-evenly;
+}
+.input:focus{
+    background-color: #c1b4c5;
+}
+.divexperiencia{
+    background-color: rgb(255, 255, 255); 
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divpexperiencia{
+    width: 600px;
+    height: 300px;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.divimagemex{
+    display:block;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.imgex{
+    width: 250px;
+    height: 250px;
+
+}
+.overlayex{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+.divimagemex:hover .overlayex{
+    opacity: 1;
+}
+
+.divfinal{
+    background-color: rgb(186, 157, 214);
+    width: 100%;
+    height: 50px;
+}
+#pfinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+p::first-letter{
+    font-size: 200%;
+}
+::selection{
+    color:white;
+    background-color: blue;
+}
+
+@media (max-width: 1200px){
+
+    menu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .divsobre{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: auto;
+        
+     }
+     .divparagrafo{
+        height: auto;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20%;
+
+     }
+    .divimagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin-bottom: 2%;
+        margin-left: 10%;
+        margin-right: 25%;
+        padding: 5%;
+
+    }
+    .divimagem img{
+        width: 80%;
+        height: 80%;
+       
+    }
+    .overlay, .overlayex{
+        display: none;
+    }
+    .divservico{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 2%;
+    }
+    .divaromoterapia{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        height: 350px;
+    }
+    .divlogo{
+        width: auto;
+    }
+    .divbutton{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: auto;
+        }
+    
+    .divbutton p{
+        width: 250px;
+    }
+    .divbutton ul
+    {
+        display:flex;
+        flex-direction: column;
+    }
+}  
